@@ -1,0 +1,86 @@
+---
+import Canvas from "../componens/canvas.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body class="bg-zinc-100">
+    <div class="w-full h-[calc(2400px_+_100vh)] relative">
+      <div class="w-full h-screen sticky top-0 left-0">
+        <div class="w-full h-full ml-auto md:w-1/2">
+          <script
+            type="module"
+            src="https://unpkg.com/@splinetool/viewer@1.1.5/build/spline-viewer.js"
+          ></script>
+          <spline-viewer
+            url="https://prod.spline.design/YBTg8jhqSEKI0JUn/scene.splinecode"
+          ></spline-viewer>
+        </div>
+        <div
+          class="w-full h-full absolute top-0 left-0 flex items-end px-4 py-20 md:px-5 lg:px-10 md:items-center"
+        >
+          <div class="flex flex-col justify-center items-start">
+            <h1
+              class="font-bolder text-4xl text-zinc-800 lg:text-7xl !leading-[1.4]"
+            >
+              <span class="bg-zinc-200"
+                >次世代の書き心地を、<br />あなたの手に</span
+              >
+            </h1>
+            <a
+              href="#"
+              class="bg-slate-900 text-slate-50 p-4 min-w-[240px] text-right mt-10"
+              >購入する</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full h-[calc(3400px_+_100vh)] relative bg-slate-200">
+      <div class="w-full h-screen sticky top-0 left-0">
+        <div class="w-full h-1/2 absolute bottom-0 left-0 md:h-full">
+          <script
+            type="module"
+            src="https://unpkg.com/@splinetool/viewer@1.1.5/build/spline-viewer.js"
+          ></script>
+          <spline-viewer
+            url="https://prod.spline.design/9u0GnNRJp0Kmzwx3/scene.splinecode"
+          ></spline-viewer>
+        </div>
+        <div
+          class="w-full h-full absolute top-0 left-0 flex items-center px-4 py-20 md:px-5 lg:px-10 md:items-start"
+        >
+          <div class="flex flex-col justify-center items-start">
+            <h2
+              class="font-bolder text-4xl text-zinc-800 lg:text-7xl !leading-[1.4]"
+            >
+              <span class="bg-zinc-50">革新的な機能とデザイン</span>
+            </h2>
+						<p class="mt-4 !leading-[1.7]">「滑らかな書き心地」「耐久性のある素材」「スタイリッシュなデザイン」</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+		<section class="px-4 md:px-5 lg:px-10 mt-16">
+			<h2 class="font-bolder text-4xl text-zinc-800 lg:text-7xl !leading-[1.4] text-center">多彩なカラーオプション</h2>
+			<p class="text-center mt-6">下記のカラーボールをクリックすることで、色の表示を変えることができます</p>
+			<div class="w-100 h-[calc(100vh_-_100px)] ">
+				<script
+					type="module"
+					src="https://unpkg.com/@splinetool/viewer@1.1.3/build/spline-viewer.js"
+				></script>
+				<spline-viewer
+					url="https://prod.spline.design/GRBHoWJfFafmiMic/scene.splinecode"
+				></spline-viewer>
+			</div>
+		</section>
+  </body>
+</html>
